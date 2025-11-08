@@ -16,6 +16,14 @@ form.addEventListener("submit",function(event){
         alert("⚠️ Please enter a valid email address.")
         return
     }
+    if(!regex.test(fNameInput)){
+        alert("The First Name containe numbers")
+        return
+    }
+    if(!regex.test(lNameInput)){
+        alert("The Last Name containe numbers")
+        return
+    }
     if(fNameInput.value.includes(" ")){
         alert("⚠️ The First Name contain space.")
         return
