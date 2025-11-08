@@ -34,7 +34,7 @@ form.addEventListener("submit",function(event){
         return
     }
     if(message.value.length < 6){
-        alert("Please Enter the at least 6 letters")
+        alert("Please Enter the at least 6 letters in the Message Box")
         return
     }
     emailjs.send("service_ve7eymo", "template_0vdynte",{
