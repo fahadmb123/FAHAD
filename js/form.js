@@ -4,6 +4,7 @@ const lNameInput = document.getElementById("lname")
 const emailInput = document.getElementById("email")
 const subjectInput = document.getElementById("subject")
 const message = document.getElementById("message")
+const regex = /^[A-Za-z\s]+$/;
 
 form.addEventListener("submit",function(event){
     event.preventDefault();
@@ -16,11 +17,11 @@ form.addEventListener("submit",function(event){
         alert("⚠️ Please enter a valid email address.")
         return
     }
-    if(!regex.test(fNameInput)){
+    if(!regex.test(fNameInput.value)){
         alert("The First Name containe numbers")
         return
     }
-    if(!regex.test(lNameInput)){
+    if(!regex.test(lNameInput.value)){
         alert("The Last Name containe numbers")
         return
     }
