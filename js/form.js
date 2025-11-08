@@ -33,6 +33,10 @@ form.addEventListener("submit",function(event){
         alert("⚠️ The Last Name contain space.")
         return
     }
+    if(message.value.length < 6){
+        alert("Please Enter the at least 6 letters")
+        return
+    }
     emailjs.send("service_ve7eymo", "template_0vdynte",{
         user_fName: fNameInput.value,
         user_lName:lNameInput.value,
